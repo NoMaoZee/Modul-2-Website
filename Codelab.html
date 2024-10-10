@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kalkulator penjumlahan dan form pendaftaran cuy👌</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <h2>Kalkulator Penjumlahan deh hehe💖</h2>
+        <input type="number" id="num1" placeholder="Angka pertama" />
+        <input type="number" id="num2" placeholder="Angka kedua" />
+        <button onclick="subtract()">Tambah</button>
+        <div id="result"></div>
+      </div>
+
+      <div class="form-container">
+        <h2>💖Form Pendaftaran🥰</h2>
+        <form id="myForm" onsubmit="return validateForm()">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required />
+          <span id="namaError" class="error"></span>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <span id="emailError" class="error"></span>
+
+          <label for="alamat">Alamat:</label>
+          <input type="text" id="alamat" name="alamat" required />
+          <span id="alamatError" class="error"></span>
+
+          <input type="submit" value="Daftar" />
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
